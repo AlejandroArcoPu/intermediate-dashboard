@@ -3,7 +3,13 @@
   --secondary-bg: white;
   --tertiary-bg: #5551ff;
   --main-gap: 25px;
+  --secondary-gap: 20px;
   --main-radius: 25px;
+  --main-padding: 25px;
+  --secondary-padding: 30px;
+  --huge-padding: 50px;
+  --button-padding: 12px;
+  --button-radius: 20px;
 }
 
 *,
@@ -25,19 +31,7 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 4fr 3fr 1fr;
   gap: var(--main-gap);
-  padding: var(--main-gap);
-}
-
-header,
-aside,
-section,
-footer {
-  background-color: var(--secondary-bg);
-  border-radius: var(--main-radius);
-}
-
-aside {
-  grid-row: 1 / 4;
+  padding: var(--main-padding);
 }
 
 img,
@@ -48,11 +42,91 @@ svg {
   max-width: 100%;
 }
 
-inputs,
-buttons,
+input,
+button,
 textarea,
 select {
   font: inherit;
+}
+
+header,
+aside,
+section,
+footer {
+  background-color: var(--secondary-bg);
+  border-radius: var(--main-radius);
+}
+
+header {
+  grid-column: 2 / 4;
+}
+
+aside {
+  grid-row: 1 / 4;
+  padding: var(--huge-padding) var(--secondary-padding);
+  display: grid;
+  gap: var(--main-gap);
+}
+
+.aside_header {
+  display: flex;
+  align-items: center;
+  gap: var(--secondary-gap);
+}
+
+.surprise {
+  position: absolute;
+  top: 6%;
+  left: 23%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  margin-right: 10px;
+}
+
+a:hover {
+  color: var(--tertiary-bg);
+}
+
+.update_pro {
+  background-color: black;
+  border-radius: var(--main-radius);
+  color: var(--main-bg);
+  padding: var(--main-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.update_pro p {
+  font-weight: lighter;
+}
+
+button {
+  background-color: var(--tertiary-bg);
+  border: none;
+  color: var(--main-bg);
+  padding: var(--button-padding) var(--secondary-padding);
+  cursor: pointer;
+  border-radius: var(--button-radius);
 }
 
 footer {
@@ -63,6 +137,7 @@ footer {
   justify-content: center;
 }
 
-footer span {
+footer span,
+aside span {
   color: var(--tertiary-bg);
 }

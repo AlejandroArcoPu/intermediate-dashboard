@@ -13,7 +13,26 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header-first">
+        <div class="header-search">
+          <img src="./icons/Search.svg" alt="Search icon" />
+          <input type="text" />
+        </div>
+        <img src="./icons/UserProfileCircle.svg" alt="Person icon" />
+      </div>
+      <div class="header-second">
+        <div class="header-titles">
+          <p class="introduction">Hi there</p>
+          <p class="name">Alex Arco(@alex)</p>
+        </div>
+        <div class="header-buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
     <aside>
       <div class="aside_header">
         <img src="./images/Dashboard.webp" alt="Dashboard logo" />
@@ -22,34 +41,34 @@
       <nav class="main_menu">
         <ul>
           <li>
-            <a href="#"><img src="./icons/Home.webp" alt="Home icon" />Home</a>
+            <a href="#"><img src="./icons/Home.svg" alt="Home icon" />Home</a>
           </li>
           <li>
             <a href="#"
               ><img
-                src="./icons/Personalcard.webp"
+                src="./icons/Personalcard.svg"
                 alt="Profile icon"
               />Profile</a
             >
           </li>
           <li>
             <a href="#"
-              ><img src="./icons/Message.webp" alt="Message icon" />Messages</a
+              ><img src="./icons/Message.svg" alt="Message icon" />Messages</a
             >
           </li>
           <li>
             <a href="#"
-              ><img src="./icons/Clock.webp" alt="History icon" />History</a
+              ><img src="./icons/Clock.svg" alt="History icon" />History</a
             >
           </li>
           <li>
             <a href="#"
-              ><img src="./icons/TaskSquare.webp" alt="Task icon" />Tasks</a
+              ><img src="./icons/TaskSquare.svg" alt="Task icon" />Tasks</a
             >
           </li>
           <li>
             <a href="#"
-              ><img src="./icons/People.webp" alt="People icon" />Communities</a
+              ><img src="./icons/People.svg" alt="People icon" />Communities</a
             >
           </li>
         </ul>
@@ -58,18 +77,18 @@
         <ul>
           <li>
             <a href="#"
-              ><img src="./icons/Setting.webp" alt="Setting icon" />Settings</a
+              ><img src="./icons/Setting.svg" alt="Setting icon" />Settings</a
             >
           </li>
           <li>
             <a href="#"
-              ><img src="./icons/24Support.webp" alt="Support icon" />Support</a
+              ><img src="./icons/24Support.svg" alt="Support icon" />Support</a
             >
           </li>
           <li>
             <a href="#"
               ><img
-                src="./icons/SecuritySafe.webp"
+                src="./icons/SecuritySafe.svg"
                 alt="Privacy icon"
               />Privacy</a
             >
@@ -85,14 +104,98 @@
       </div>
     </aside>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="projects">
+        <div class="projects-header">
+          <h1>Your <span>projects</span></h1>
+          <img src="./icons/Idea Lightbulb.svg" alt="Idea Lightbulb" />
+        </div>
+        <div class="projects-content">
+          <article>
+            <h2>Super Cool Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="html">HTML</div>
+              <div class="css">CSS</div>
+              <div class="js">JS</div>
+            </div>
+          </article>
+          <article>
+            <h2>Less Cool Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="html">HTML</div>
+              <div class="css">CSS</div>
+            </div>
+          </article>
+          <article>
+            <h2>Impossible App</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="html">HTML</div>
+              <div class="css">CSS</div>
+            </div>
+          </article>
+          <article>
+            <h2>Easy Peasy App</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="js">JS</div>
+            </div>
+          </article>
+          <article>
+            <h2>Ad Blocker</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="js">JS</div>
+            </div>
+          </article>
+          <article>
+            <h2>Money Maker</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="programming">
+              <div class="html">HTML</div>
+              <div class="js">JS</div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="announcements">
+        <div class="mini-box-header">
+          <div class="mini-box-header-titles">
+            <h2>Announcements</h2>
+            <p>News about the system</p>
+          </div>
+          <img src="./icons/Megaphone.svg" alt="Megaphone icon" />
+        </div>
+        <div class="announcements-content">
+          <h4>Site maintenance</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="separator"></div>
+        <div class="announcements-content">
+          <h4>Community Share Day</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="separator"></div>
+        <div class="announcements-content">
+          <h4>Updated Privacy Policy</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+      <section class="trending">
+        <div class="mini-box-header">
+          <div class="mini-box-header-titles">
+            <h2>Trending</h2>
+            <p>Most trending users</p>
+          </div>
+          <img src="./icons/Trophy.svg" alt="Trophy icon" />
+        </div>
+      </section>
     </main>
     <footer>
       <p>
         © By Dash<span>board</span> with
-        <img src="icons/HeartsSymbol.webp" alt="Heart Symbol" />
+        <img src="icons/HeartsSymbol.svg" alt="Heart Symbol" />
       </p>
     </footer>
   </body>
